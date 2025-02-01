@@ -1,6 +1,10 @@
 import React from "react";
 import "./home.css";
 import FeaturedAgencies from "./FeaturedAgencies";
+import Testimonials from "./Testimony";
+import NewsSection from "./News/E/NewsSection";
+import Newsletter from "./News/E/Newsletter";
+
 const Home = () => {
   return (
     <>
@@ -17,10 +21,17 @@ const Home = () => {
         <div className="searchbar">
           {/* Add input element for search functionality */}
           <input type="text" placeholder="Search agencies..." />
+          <select>
+            <option value="marketing">Marketing</option>
+            <option value="branding">Branding</option>
+            <option value="web-design">Web Design</option>
+          </select>
+
+          <button className="cta-button">Start Your Search</button>
         </div>{" "}
       </div>
       <main>
-        <p className="main_content"> 
+        <p className="main_content">
           At Agency Lookup, we help you discover the best agencies for your
           needs. With a simple search, you can explore detailed agency profiles,
           including services offered, ratings, reviews, and contact information.
@@ -29,7 +40,21 @@ const Home = () => {
           personal project.
         </p>
         <div>
-          <FeaturedAgencies/>
+          <FeaturedAgencies />
+        </div>
+
+        <div>
+            <div className="testimonial">
+              <Testimonials />
+            </div>
+        </div>
+        <div>
+          <div>
+            <NewsSection />
+          </div>
+        </div>
+        <div>
+          <Newsletter/>
         </div>
       </main>
     </>
