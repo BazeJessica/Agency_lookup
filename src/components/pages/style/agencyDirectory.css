@@ -1,0 +1,118 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.directory-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ .title-section {
+  
+  font-weight: bold;
+  display: flex;
+  color: #007bff;  /* Blue color */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Makes text all caps */
+  letter-spacing: 2px;/* Spacing between letters */
+  position: relative;
+}
+.directory-header h1{
+font-size: 2.0rem;
+margin-bottom: 10px;
+}
+ .title-section img{
+  width: 400px;
+  align-self: self-start;
+ }
+/* Adding an underline effect */
+.title-section::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title-section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Top navigation styling */
+.top-nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.top-nav input:focus{
+  border-color: #007bff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+/* Content section styling */
+.category-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.category-section h2{
+  font-size: 1.5rem;
+  background-color: #8db9e9;
+  padding: 2px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  padding-inline: 10px;
+}
+.category-section li{
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.category-section li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.category-section li a:hover{
+  color:#0056b3;
+  text-decoration: underline;
+
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .top-nav input {
+    width: 95%;
+  }
+
+  .category-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .category-section li {
+    font-size: 1rem;
+  }
+}

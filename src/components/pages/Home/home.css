@@ -1,32 +1,40 @@
 .title-section {
-    text-align: center;
-    padding: 40px;
-    background-color: #f4f4f4;
-  }
-  .title {
-    font-size: 2.0rem;
-    font-weight: bold;
-    color: #333;
-  }
+  display: flex;          
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center; 
+  padding: 40px;
+  background-color: #f4f4f4;
+  width: 100%;            
+  min-height: 200px;      
+  border-radius: 10px;    
+}
+.title-section h5{
+  text-align: center;
+  padding: 10px;
+
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px; 
+  border-radius: 5px;  
+  display: inline-block; 
+}
+
   .subtitle {
     font-size: 1.7rem;
     color: #555;
   }
-  
-  .searchbar {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .searchbar input {
+  .cta-button{
     padding: 10px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    width: 400px;
+    background-color: rgb(15, 29, 214);
+    color: #f4f4f4;
+    font-weight: 700;
+    border-radius: 12px;
   }
-  
   .main_content{
     font-size: 1.2rem;
     margin: 20px;

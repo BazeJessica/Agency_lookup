@@ -20,13 +20,6 @@ const Home = () => {
         </h5>
         <div className="searchbar">
           {/* Add input element for search functionality */}
-          <input type="text" placeholder="Search agencies..." />
-          <select>
-            <option value="marketing">Marketing</option>
-            <option value="branding">Branding</option>
-            <option value="web-design">Web Design</option>
-          </select>
-
           <button className="cta-button">Start Your Search</button>
         </div>{" "}
       </div>

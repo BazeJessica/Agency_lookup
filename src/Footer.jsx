@@ -18,7 +18,7 @@ const Footer = () => {
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
             <li><a href="/about" className="footer-link">About</a></li>
-            <li><a href="/services" className="footer-link">Agency Profile</a></li>
+            <li><a href="/agency-profile" className="footer-link">Agency Profile</a></li>
             <li><a href="/contact" className="footer-link">Contact</a></li>
             <li><a href="/privacy" className="footer-link">Privacy Policy</a></li>
           </ul>
