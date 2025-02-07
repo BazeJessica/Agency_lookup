@@ -11,6 +11,7 @@ import Login from './Login'
 import Privacy from './Privacy'
 import './styles/nav.css';
 import Footer from './Footer';
+import AgencyDetails from './components/pages/Agency Directory/AgencyDetails';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/signup' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
         <Route path = '/privacy' element={<Privacy />} />
+        <Route path="/agency/:agencyName" element={<AgencyDetails />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
