@@ -1,0 +1,53 @@
+.details-content {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(247, 243, 243);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .agency-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .agency-image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin:40px 0px;
+  }
+
+.agency-image {
+    
+    height: 1000px;
+    width: 80%;
+}
+
+  .agency-description ,.agency-contact{
+    color: #201f1f;
+
+  }
+  .agency-description {
+    margin-top: 10px;
+  }
+  
+  .agency-contact {
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+  
