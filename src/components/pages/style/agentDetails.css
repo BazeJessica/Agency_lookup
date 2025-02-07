@@ -1,53 +1,117 @@
 .details-content {
-    margin: 10px;
-    padding: 20px;
-    background-color: rgb(247, 243, 243);
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .agency-name {
-    font-size: 32px;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .agency-image-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    margin:40px 0px;
-  }
-
-.agency-image {
-    
-    height: 1000px;
-    width: 80%;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-  .agency-description ,.agency-contact{
-    color: #201f1f;
+.agency-name {
+  margin-top: 20px;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
 
+.agency-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.agency-image {
+  height: 700px;
+  width: 50%;
+  object-fit: cover;  /* Ensures image keeps aspect ratio */
+  max-width: 100%; /* Ensures image is responsive */
+}
+
+.agency-description,
+.agency-contact {
+  color: #201f1f;
+}
+
+.agency-description {
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.agency-contact {
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and Smaller Screens */
+@media (max-width: 768px) {
+  .agency-name {
+    font-size: 28px;
   }
+
+  .agency-image-container {
+    height: auto; /* Allow image container to shrink on smaller screens */
+  }
+
+  .agency-image {
+    height: auto;
+    width: 80%;
+  }
+
   .agency-description {
+    font-size: 18px;
+  }
+
+  .agency-contact {
+    font-size: 16px;
     margin-top: 10px;
   }
-  
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .details-content {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .agency-name {
+    font-size: 24px;
+  }
+
+  .agency-image-container {
+    height: auto; /* Allow image container to shrink on smaller screens */
+  }
+
+  .agency-image {
+    height: auto;
+    width: 100%; /* Full width on mobile */
+  }
+
+  .agency-description {
+    font-size: 16px;
+  }
+
   .agency-contact {
-    font-weight: 500;
-    margin-top: 15px;
+    font-size: 14px;
+    margin-top: 5px;
   }
-  
+
   .back-link {
-    display: inline-block;
-    margin-top: 20px;
-    color: #007bff;
-    text-decoration: none;
+    font-size: 16px;
   }
-  
-  .back-link:hover {
-    text-decoration: underline;
-    color: blue;
-  }
-  
+}

@@ -1,0 +1,19 @@
+That makes sense since you're building a broad agency lookup tool! You might need to combine multiple APIs or sources to cover everything. Here's a strategy to get started:  
+
+### **1. Business & Marketing Agencies**  
+- **Google Places API** (🔗 [Google Maps Platform](https://developers.google.com/maps))  
+- **Yelp Fusion API** (🔗 [Yelp Developers](https://www.yelp.com/developers))  
+
+### **2. Government Agencies**  
+- **U.S. Data.gov API** (🔗 [Data.gov](https://www.data.gov)) – Has various datasets  
+- **European Data Portal** (🔗 [EU Open Data](https://data.europa.eu))  
+
+### **3. Company & Industry Info**  
+- **Crunchbase API** (🔗 [Crunchbase Developers](https://data.crunchbase.com/)) – Business insights (premium)  
+- **Clearbit API** (🔗 [Clearbit](https://clearbit.com)) – Company data & logo info  
+
+### **4. Web Scraping (if APIs are limited)**  
+- **SerpAPI** (🔗 [SerpAPI](https://serpapi.com/)) – Scrapes Google results legally  
+- **Custom Scraping with Python (BeautifulSoup/Scrapy)**  
+
+Would you like help integrating any of these, or do you need an API that covers something specific?

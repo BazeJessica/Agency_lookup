@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import agencyData from "./agencyData";
@@ -9,7 +11,8 @@ const AgencyDetails = () => {
 
   
   if (!agencyName || !agencyData[agencyName]) {
-    return <h2>Agency not found.</h2>;
+    return <><h2>Agency not found.</h2><Link to="/agency-directory" className="back-link">Back to Directory </Link></>
+    ;
   }
 
 
@@ -24,6 +27,8 @@ const AgencyDetails = () => {
       
       <p className="agency-description">{agency.description}</p>
       <p className="agency-contact">Contact: {agency.contact}</p>
+      <Link to={agency.url} className="back-link">CLick me for more Info</Link>
+      <br />
       <Link to="/agency-directory" className="back-link">Back to Directory </Link>
     </div>
   );
